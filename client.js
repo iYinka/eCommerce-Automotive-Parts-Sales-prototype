@@ -19,7 +19,7 @@ fetch("/create-payment-intent", {
     return result.json();
   })
   .then(function(data) {
-    var elements = stripe.elements();
+     var elements = stripe.elements();
 
     var style = {
       base: {
@@ -35,6 +35,8 @@ fetch("/create-payment-intent", {
         color: "#fa755a",
       }
     };
+
+  
 
     var card = elements.create("card", { style: style });
     // Stripe injects an iframe into the DOM
@@ -52,7 +54,7 @@ fetch("/create-payment-intent", {
       // Complete payment when the submit button is clicked
       payWithCard(stripe, card, data.clientSecret);
     });
-  });
+   });
 
 // Calls stripe.confirmCardPayment
 // If the card requires authentication Stripe shows a pop-up modal to
