@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Accept a card payment</title>
+    <meta name="description" content="A demo of a card payment on Stripe" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="icon" type="text/css" href="favicon.ico">
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="/client.js" defer></script>
+
+    <!-- Fontawesome.com for web icons -->
+    <script src="https://kit.fontawesome.com/a13cb8a0e0.js" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body id="billing">
+    
+    <!-- Display a payment form -->
+    <form id="payment-form" autocomplete="off">
+      <h3>Billing Address</h3>
+      <br>
+      <br>
+      <div>
+      <label for="cname"><i class="fas fa-user-alt"></i></label>
+      <input type="text" id="cname" name="cardname" placeholder="Adebayo Amechi Adamu">
+      </div>
+      <br>
+      <div>
+      <label for="Address"><i class="fas fa-address-card"></i></label>
+      <input type="text" id="adr" name="address" placeholder="Block 147 Flat 3 Jakande Estate, Ejigbo">
+      <!-- <label for="city"><i class="fa fa-institution"></i> City</label> -->
+      <span><input type="text" id="city" name="city"
+          placeholder="Lagos, Nigeria"></span>
+      </div>
+      <br>
+      <label for="email"><i class="fas fa-envelope"></i></label>
+      <input type="text" id="email" placeholder="Email address" />
+      <br>
+      <h4><i class="fas fa-credit-card"></i> Card details</h4>
+      <div class="icon-container">
+        <i class="fa fa-cc-visa" style="color:navy;"></i>
+        <i class="fa fa-cc-amex" style="color:blue;"></i>
+        <i class="fa fa-cc-mastercard" style="color:red;"></i>
+        <i class="fa fa-cc-discover" style="color:orange;"></i>
+      </div>
+      <div id="card-element"><!--Stripe.js injects the Card Element--></div>
+      <button id="submit">
+        <div class="spinner hidden" id="spinner"></div>
+        <span id="button-text">Pay</span>
+      </button>
+      
+      <p>© Copyright 2020 AdeAutos. Powered by Stripe</p>
+    </form>
+
+
+  </body>
+</html>

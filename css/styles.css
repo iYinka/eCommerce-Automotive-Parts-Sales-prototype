@@ -1,0 +1,350 @@
+/*Headings*/
+.big-heading {
+    font-size: 3rem;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.section-heading {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.container-fluid {
+    padding: 7% 15%;
+}
+
+
+
+/*Elements*/
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat-Bold', sans-serif;
+}
+
+p {
+    color: #8f8f8f;
+    font-family: "Montserrat";
+    font-weight: bold;
+}
+
+
+/*Navigation bar*/
+.navbar {
+    padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-family: "Montserrat-Light";
+}
+
+
+/*Download Buttons*/
+.download-button {
+    margin: 5% 3% 5% 0;
+}
+
+
+
+/*Title-image*/
+#title .container-fluid {
+    
+    background-color: #900d0d;
+    color: #fff;
+    text-align: left;
+    padding: 3% 15% 7%;
+}
+
+
+.title-image {
+    width: 150%;
+    margin: auto 0 -22% -6%;
+    
+}
+
+
+
+/*Features Section*/
+#features {
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.feature {
+    font-family: "Montserrat-Bold", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+.awesome {
+    color: #ef8172;
+    position: relative;
+    left: 0;
+    margin-bottom: 5%;
+}
+
+.awesome:hover {
+    color: #ff4c68;
+}
+
+
+/*Testimonial and Press Sections*/
+
+#testimonials {
+    background-color: #393b44;
+    color: #fff;
+}
+
+.testimonial-text {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.testimonial-image {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+
+#press {
+    background-color: #ef8172;
+    padding-bottom: 3%;
+}
+
+.press-logo {
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+
+/*Pricing Section*/
+#pricing {
+    padding: 100px;
+}
+
+
+.price-text {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.pricing-column {
+    padding: 3% 2%;
+}
+
+
+
+/*Call To Action Section*/
+#cta {
+    background-color: #ff4c68;
+    color: #fff;
+    line-height: 2;
+}
+
+
+/*Footer Section*/
+
+#footer {
+    background-color: #fff;
+}
+
+.fab-icon {
+    margin: 20px 10px;
+}
+
+
+
+
+
+/*SPECIAL AND IMPORTANT CSS FOR SCREEN RESOLUTIONS*/
+/*Media Query Breakpoints: Used to created good views between screen resolutions*/
+/*This section is totally different from those above. Therefore, refactoring is not adviced here*/
+
+@media (max-width: 1028px) {
+    #title {
+        text-align: center;
+    }
+
+    .title-image {
+        position: static;
+        transform: rotate(0);
+    }
+}
+
+
+
+
+/* Checkout Form */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+}
+
+.price {
+    color: grey;
+    font-size: 22px;
+}
+
+.card a {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card a:hover {
+    opacity: 0.7;
+}
+
+
+
+
+
+.show-cart li {
+    display: flex;
+}
+
+
+.card-img-top {
+    width: 200px;
+    height: 200px;
+    align-self: center;
+}
+
+
+
+/* Checkout form */
+.row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+}
+
+.col-25 {
+    -ms-flex: 25%;
+    /* IE10 */
+    flex: 25%;
+}
+
+.col-50 {
+    -ms-flex: 50%;
+    /* IE10 */
+    flex: 50%;
+}
+
+.col-75 {
+    -ms-flex: 75%;
+    /* IE10 */
+    flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+    padding: 0 16px;
+}
+
+.container {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+}
+
+input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+}
+
+.checkoutBtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.checkoutBtn:hover {
+    background-color: #45a049;
+}
+
+span.price {
+    float: right;
+    color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+    .row {
+        flex-direction: column-reverse;
+    }
+
+    .col-25 {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+#payment-form {
+    background-color: #3b6978;
+}
+
+#billing {
+    background-color: #dfd3c3;
+}

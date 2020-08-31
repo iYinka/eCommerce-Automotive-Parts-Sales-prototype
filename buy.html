@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ade Auto Parts</title>
+    <!-- BootstrapsCSS links -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="text/css" href="favicon.ico">
+</link>
+
+    <!-- End of Bootstrap scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <!-- End of Bootstrap links and scripts -->
+
+
+    <!-- Fontawesome.com for web icons -->
+    <script src="https://kit.fontawesome.com/a13cb8a0e0.js" crossorigin="anonymous"></script>
+
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <!-- End of Google fonts -->
+
+    <!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    
+</head>
+
+<body>
+
+
+    <!-- Nav -->
+    <nav class="navbar navbar-inverse bg-inverse fixed-top bg-faded">
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart" autocomplete="off"><i class="fa fa-shopping-cart"></i>  Cart (<span class="total-count"></span>)
+                </button><button class="clear-cart btn btn-danger">Clear Cart</button>
+            </div>
+        </div>
+    </nav>
+
+
+
+<section id="pricing" >
+
+    <h2 class="section-heading">Your automobile is your pride.</h2>
+    <p>Quality products at affordable price plans for your auto.</p>
+
+    <div class="row">
+        <div class="pricing-column col-lg-4 col-md-6">
+            <div class="card">
+                <img src="images/bosch.jpg" alt="bosch" style="width:100%">
+                <div class="card-block">
+                    <p class="price card-text">&#8358;1,300.00</p>
+                    <p class="card-title">Bosch Iridium Spark Plug, 2-pk</p>
+                    <p><a href="#" data-name="Boschplug" data-price="1300" class="add-to-cart btn btn">Add to cart</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="pricing-column col-lg-4 col-md-6">
+            <div class="card">
+                <img src="images/brake.png" alt="brake" style="width:100%">
+                <div class="card-block">
+                    <p class="price card-text">&#8358;10,000.00</p>
+                    <p class="card-title">Auto Brake Pads (Fdb435)</p>
+                    <p><a href="#" data-name="Fdb435" data-price="10000" class="add-to-cart btn btn">Add to cart</a></p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="pricing-column col-lg-4 col-md-6">
+            <div class="card">
+                <img src="images/volvo.jpg" alt="volvo" style="width:100%">
+                <div class="card-block">
+                    <p class="price card-text">&#8358;18,000.00</p>
+                    <p class="card-title">Volvo Brake Pad Set(Front)</p>
+                    <p><a href="#" data-name="Volvo-Brake" data-price="18000" class="add-to-cart btn btn">Add to
+                            cart</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class=" pricing-column col-lg-4 col-md-6">
+                <div class="card">
+                    <img src="images/camry.jpg" alt="offroad" style="width:100%">
+                    <div class="card-block">
+                        <p class="price card-text">&#8358;35,000.00</p>
+                        <p class="card-title">Toyota Camry Rear Disc Brake Rotors</p>
+                        <p><a href="#" data-name="Brakepad" data-price="35000" class="add-to-cart btn">Add to cart</a></p>
+                    </div>
+                </div>
+        </div>
+
+
+          <div class="pricing-column col-lg-4 col-md-6">
+              <div class="card">
+                  <img src="images/axle.jpg" alt="axle" style="width:100%">
+                  <div class="card-block">
+                      <p class="price card-text">&#8358;25,000.00</p>
+                      <p class="card-title">Detroit Axle-Front Brake kit</p>
+                      <p><a href="#" data-name="Detroit-Axle" data-price="25000" class="add-to-cart btn btn">Add to
+                              cart</a></p>
+                  </div>
+              </div>
+          </div>
+
+
+           <div class="pricing-column col-lg-4 col-md-6">
+               <div class="card">
+                   <img src="images/drifter.jpg" alt="drifter" style="width:100%">
+                   <div class="card-block">
+                       <p class="price card-text">&#8358;5,000.00</p>
+                       <p class="card-title">Drifter Steering Wheel-350mm</p>
+                       <p><a href="#" data-name="Drifter" data-price="5000" class="add-to-cart btn btn">Add to cart</a>
+                       </p>
+                   </div>
+               </div>
+           </div>
+
+
+           <div class="pricing-column col-lg-4 col-md-6">
+               <div class="card">
+                   <img src="images/e3-Plug.jpg" alt="e3-plug" style="width:100%">
+                   <div class="card-block">
+                       <p class="price card-text">&#8358;7,000.00</p>
+                       <p class="card-title">e3-Spark Plug</p>
+                       <p><a href="#" data-name="e3-Plug" data-price="7000" class="add-to-cart btn btn">Add to cart</a>
+                       </p>
+                   </div>
+               </div>
+           </div>
+
+           <div class="pricing-column col-lg-4 col-md-6">
+               <div class="card">
+                   <img src="images/vintage.jpg" alt="vintage" style="width:100%">
+                   <div class="card-block">
+                       <p class="price card-text">&#8358;75,000.00</p>
+                       <p class="card-title">Wood Vintage Style 14-inch Steering Wheel</p>
+                       <p><a href="#" data-name="Vintage" data-price="75000" class="add-to-cart btn btn">Add to cart</a>
+                       </p>
+                   </div>
+               </div>
+           </div>
+
+           <div class="pricing-column col-lg-4 col-md-6">
+               <div class="card">
+                   <img src="images/logano.jpg" alt="logano" style="width:100%">
+                   <div class="card-block">
+                       <p class="price card-text">&#8358;83,000.00</p>
+                       <p class="card-title">Logano Wood Steering Wheel</p>
+                       <p><a href="#" data-name="Logano" data-price="83000" class="add-to-cart btn btn">Add to cart</a>
+                       </p>
+                   </div>
+               </div>
+           </div>
+           <div class="pricing-column col-lg-4 col-md-6">
+               <div class="card">
+                   <img src="images/volante.jpg" alt="Volante" style="width:100%">
+                   <div class="card-block">
+                       <p class="price card-text">&#8358;68,000.00</p>
+                       <p class="card-title">Volante Sport Wood 6-Bolt Mahogany Finish Steering</p>
+                       <p><a href="#" data-name="Volante" data-price="68000" class="add-to-cart btn btn">Add to cart</a>
+                       </p>
+                   </div>
+               </div>
+           </div>
+
+
+        <div class="pricing-column col-lg-4 col-md-6">
+                <div class="card">
+                    <img src="images/silver.jpg" alt="silver" style="width:100%">
+                    <div class="card-block">
+                        <p class="price card-text">&#8358;130,000.00</p>
+                        <p class="card-title">17-inch Silver Custom styling aluminium alloy wheel rim</p>
+                        <p><a href="#" data-name="17-inch-Silver-Rims" data-price="130000" class="add-to-cart btn btn">Add to cart</a></p>
+                    </div>
+                </div>  
+        </div>
+
+
+        <div class="pricing-column col-lg-4 col-md-6">
+            <div class="card">
+                <img src="images/hyundai.jpg" alt="hyundai" style="width:100%">
+                <div class="card-block">
+                    <p class="price card-text">&#8358;174,000.00</p>
+                    <p class="card-title">17Inch Alloy Wheel Car Rims-Hyundai</p>
+                    <p><a href="#" data-name="17-inch-Silver-Hyundai-Rims" data-price="174000" class="add-to-cart btn btn">Add to
+                            cart</a></p>
+                </div>
+            </div>
+        </div>
+      
+
+           <div class="pricing-column col-lg-4 col-md-6">
+               <div class="card">
+                   <img src="images/beadlock.jpg" alt="beadlock" style="width:100%">
+                   <div class="card-block">
+                       <p class="price card-text">&#8358;1,000,000.00</p>
+                       <p class="card-title">4pcs 22" Alloy Beadlock Wheel Rims</p>
+                       <p><a href="#" data-name="Beadlock-Rims" data-price="1000000" class="add-to-cart btn"> Add to cart</a>
+                       </p>
+                       </p>
+                   </div>
+               </div>
+           </div>
+         
+</section>
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <table class="show-cart table">
+
+                </table>
+                <div>Total price: &#8358;<span class="total-cart"></span></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <a href="create-payment-intent.html"> <button type="button" class="btn btn-primary">Check Out</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="index.js" charset="utf-8"></script>
+</body>
+</html>
