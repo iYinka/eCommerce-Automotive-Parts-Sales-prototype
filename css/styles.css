@@ -77,7 +77,7 @@ p {
 }
 
 
-.title-image {
+#title-image {
     width: 150%;
     margin: auto 0 -22% -6%;
     
@@ -146,6 +146,16 @@ p {
     padding: 100px;
 }
 
+#buyTitle {
+    background-color: #900d0d;
+    size: 5px;
+}
+
+#buyTitle .a {
+    padding-left: 100px;
+    padding-top: 25px;
+}
+
 
 .price-text {
     font-size: 3rem;
@@ -184,14 +194,14 @@ p {
 /*Media Query Breakpoints: Used to created good views between screen resolutions*/
 /*This section is totally different from those above. Therefore, refactoring is not adviced here*/
 
-@media (max-width: 1028px) {
+@media (max-width: 320px) {
     #title {
-        text-align: center;
+        text-align: auto;
     }
 
-    .title-image {
-        position: static;
-        transform: rotate(0);
+    img {
+       width: 100%;
+        height: auto;
     }
 }
 
@@ -228,7 +238,9 @@ p {
     opacity: 0.7;
 }
 
-
+.clear-cart {
+    background-color: #900d0d;
+}
 
 
 
@@ -342,9 +354,9 @@ span.price {
 
 
 #payment-form {
-    background-color: #3b6978;
+    background-color: #fff;
 }
 
 #billing {
-    background-color: #dfd3c3;
+    background-color: #393b44;
 }
